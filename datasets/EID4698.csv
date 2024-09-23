@@ -1,0 +1,1593 @@
+computer_name,event_id,message
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		MY-CAL-WIN10$
+	Account Domain:		MY-CALDERA
+	Logon ID:		0x3E7
+
+Task Information:
+	Task Name: 		\Microsoft\Windows\EnterpriseMgmtNonCritical\B8CDB685-E763-459A-B39B-CB68B1541710\Queued Schedule created for queued alerts
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.4"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Author>$(@%systemRoot%\system32\deviceenroller.exe,-101)</Author>
+    <Description>$(@%systemRoot%\system32\deviceenroller.exe,-102)</Description>
+    <URI>\Microsoft\Windows\EnterpriseMgmtNonCritical\B8CDB685-E763-459A-B39B-CB68B1541710\Queued Schedule created for queued alerts</URI>
+    <SecurityDescriptor>D:(A;;FA;;;BA)(A;;FA;;;SY)(A;;FRFX;;;LS)</SecurityDescriptor>
+  </RegistrationInfo>
+  <Triggers>
+    <WnfStateChangeTrigger id=""DataSenseTrigger"">
+      <Enabled>true</Enabled>
+      <StateName>7528BCA32E008315</StateName>
+      <Data>01</Data>
+      <DataOffset>0</DataOffset>
+    </WnfStateChangeTrigger>
+    <WnfStateChangeTrigger id=""FreeNetworkTrigger"">
+      <Enabled>true</Enabled>
+      <StateName>7510BCA33E0B8441</StateName>
+      <Data>03</Data>
+      <DataOffset>0</DataOffset>
+    </WnfStateChangeTrigger>
+    <TimeTrigger>
+      <StartBoundary>2024-08-19T17:16:57</StartBoundary>
+      <Enabled>true</Enabled>
+    </TimeTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""LocalSystem"">
+      <UserId>S-1-5-18</UserId>
+      <RunLevel>HighestAvailable</RunLevel>
+      <LogonType>InteractiveToken</LogonType>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <AllowHardTerminate>false</AllowHardTerminate>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <DisallowStartOnRemoteAppSession>false</DisallowStartOnRemoteAppSession>
+    <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""LocalSystem"">
+    <Exec>
+      <Command>%windir%\system32\deviceenroller.exe</Command>
+      <Arguments>/o ""B8CDB685-E763-459A-B39B-CB68B1541710"" /c /q</Arguments>
+    </Exec>
+  </Actions>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324609650
+	ClientProcessId: 			10120
+	ParentProcessId: 			1376
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\npcapwatchdog
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Date>2024-08-19T17:11:59</Date>
+    <Author>MY-CALDERA\johnny.douche</Author>
+    <URI>\npcapwatchdog</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <BootTrigger>
+      <StartBoundary>2024-08-19T17:11:00</StartBoundary>
+      <Enabled>true</Enabled>
+    </BootTrigger>
+  </Triggers>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>""C:\Program Files\Npcap\CheckStatus.bat""</Command>
+    </Exec>
+  </Actions>
+  <Principals>
+    <Principal id=""Author"">
+      <UserId>S-1-5-18</UserId>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324609653
+	ClientProcessId: 			8936
+	ParentProcessId: 			9500
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\npcapwatchdog
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Date>2024-08-19T17:13:20</Date>
+    <Author>MY-CALDERA\johnny.douche</Author>
+    <URI>\npcapwatchdog</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <BootTrigger>
+      <StartBoundary>2024-08-19T17:13:00</StartBoundary>
+      <Enabled>true</Enabled>
+    </BootTrigger>
+  </Triggers>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>""C:\Program Files\Npcap\CheckStatus.bat""</Command>
+    </Exec>
+  </Actions>
+  <Principals>
+    <Principal id=""Author"">
+      <UserId>S-1-5-18</UserId>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324609727
+	ClientProcessId: 			1988
+	ParentProcessId: 			2904
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\win32times
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Date>2024-08-19T18:30:21</Date>
+    <Author>MY-CALDERA\johnny.douche</Author>
+    <URI>\win32times</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <CalendarTrigger>
+      <StartBoundary>2024-08-19T18:30:00</StartBoundary>
+      <Enabled>true</Enabled>
+      <ScheduleByDay>
+        <DaysInterval>1</DaysInterval>
+      </ScheduleByDay>
+    </CalendarTrigger>
+  </Triggers>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>cmd</Command>
+      <Arguments>/c powershell.exe -ep bypass -file c:\T1036.004_NonExistingScript.ps1</Arguments>
+    </Exec>
+  </Actions>
+  <Principals>
+    <Principal id=""Author"">
+      <UserId>S-1-5-18</UserId>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324612878
+	ClientProcessId: 			3672
+	ParentProcessId: 			3196
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\T1053_005_OnLogon
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Date>2024-08-19T18:36:43</Date>
+    <Author>MY-CALDERA\johnny.douche</Author>
+    <URI>\T1053_005_OnLogon</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <LogonTrigger>
+      <StartBoundary>2024-08-19T18:36:00</StartBoundary>
+      <Enabled>true</Enabled>
+    </LogonTrigger>
+  </Triggers>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>cmd.exe</Command>
+      <Arguments>/c calc.exe</Arguments>
+    </Exec>
+  </Actions>
+  <Principals>
+    <Principal id=""Author"">
+      <UserId>MY-CALDERA\johnny.douche</UserId>
+      <LogonType>InteractiveToken</LogonType>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324613036
+	ClientProcessId: 			10740
+	ParentProcessId: 			7080
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\T1053_005_WMI
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Date>2021-04-22T12:29:17</Date>
+    <Author>AtomicRedTeam</Author>
+    <URI>\T1053_005_WMI</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <LogonTrigger>
+      <StartBoundary>2021-04-22T12:29:00</StartBoundary>
+      <Enabled>true</Enabled>
+    </LogonTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""Author"">
+      <GroupId>S-1-5-32-545</GroupId>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>notepad.exe</Command>
+    </Exec>
+  </Actions>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324612947
+	ClientProcessId: 			10320
+	ParentProcessId: 			912
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\ATOMIC-T1053.005
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Date>2024-08-19T18:37:06</Date>
+    <Author>MY-CALDERA\johnny.douche</Author>
+    <URI>\ATOMIC-T1053.005</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <CalendarTrigger>
+      <StartBoundary>2024-08-19T07:45:00</StartBoundary>
+      <Enabled>true</Enabled>
+      <ScheduleByDay>
+        <DaysInterval>1</DaysInterval>
+      </ScheduleByDay>
+    </CalendarTrigger>
+  </Triggers>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>cmd</Command>
+      <Arguments>/c start /min """" powershell.exe -Command IEX([System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String((Get-ItemProperty -Path HKCU:\\SOFTWARE\\ATOMIC-T1053.005).test)))</Arguments>
+    </Exec>
+  </Actions>
+  <Principals>
+    <Principal id=""Author"">
+      <UserId>MY-CALDERA\johnny.douche</UserId>
+      <LogonType>InteractiveToken</LogonType>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324613055
+	ClientProcessId: 			1076
+	ParentProcessId: 			4444
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\T1053_005_OnStartup
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Date>2024-08-19T18:36:43</Date>
+    <Author>MY-CALDERA\johnny.douche</Author>
+    <URI>\T1053_005_OnStartup</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <BootTrigger>
+      <StartBoundary>2024-08-19T18:36:00</StartBoundary>
+      <Enabled>true</Enabled>
+    </BootTrigger>
+  </Triggers>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>cmd.exe</Command>
+      <Arguments>/c calc.exe</Arguments>
+    </Exec>
+  </Actions>
+  <Principals>
+    <Principal id=""Author"">
+      <UserId>S-1-5-18</UserId>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324613037
+	ClientProcessId: 			6168
+	ParentProcessId: 			7080
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\spawn
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Date>2024-08-19T18:36:45</Date>
+    <Author>MY-CALDERA\johnny.douche</Author>
+    <URI>\spawn</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <TimeTrigger>
+      <StartBoundary>2024-08-19T20:10:00</StartBoundary>
+      <Enabled>true</Enabled>
+    </TimeTrigger>
+  </Triggers>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>C:\windows\system32\cmd.exe</Command>
+    </Exec>
+  </Actions>
+  <Principals>
+    <Principal id=""Author"">
+      <UserId>MY-CALDERA\johnny.douche</UserId>
+      <LogonType>InteractiveToken</LogonType>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324613040
+	ClientProcessId: 			11068
+	ParentProcessId: 			6356
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\Run Notepad
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Author>Administrator</Author>
+    <Description>Start Notepad without UAC</Description>
+    <URI>\Run Notepad</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <TimeTrigger id=""TimeTriggerId"">
+      <StartBoundary>2024-08-19T18:37:10</StartBoundary>
+      <EndBoundary>2024-10-19T18:37:00</EndBoundary>
+      <ExecutionTimeLimit>PT5M</ExecutionTimeLimit>
+      <Enabled>true</Enabled>
+    </TimeTrigger>
+  </Triggers>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>C:\Windows\System32\notepad.exe</Command>
+    </Exec>
+  </Actions>
+  <Principals>
+    <Principal id=""Author"">
+      <UserId>MY-CALDERA\johnny.douche</UserId>
+      <LogonType>InteractiveToken</LogonType>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324613048
+	ClientProcessId: 			5404
+	ParentProcessId: 			912
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\AtomicTaskModifed
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.3"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <URI>\AtomicTaskModifed</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <LogonTrigger>
+      <Enabled>true</Enabled>
+    </LogonTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""Author"">
+      <GroupId>S-1-5-32-544</GroupId>
+      <RunLevel>HighestAvailable</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <DisallowStartOnRemoteAppSession>false</DisallowStartOnRemoteAppSession>
+    <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>cmd.exe</Command>
+    </Exec>
+  </Actions>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324612947
+	ClientProcessId: 			10320
+	ParentProcessId: 			912
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\ExplorerSync
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Date>2024-08-19T19:58:02</Date>
+    <Author>MY-CALDERA\johnny.douche</Author>
+    <URI>\ExplorerSync</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <TimeTrigger>
+      <Repetition>
+        <Interval>PT1M</Interval>
+        <StopAtDurationEnd>false</StopAtDurationEnd>
+      </Repetition>
+      <StartBoundary>2024-08-19T19:58:00</StartBoundary>
+      <Enabled>true</Enabled>
+    </TimeTrigger>
+  </Triggers>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>javaw</Command>
+      <Arguments>-jar C:\Users\JOHNNY~1.DOU\AppData\Local\Temp\..\Microsoft\ExplorerSync.db</Arguments>
+    </Exec>
+  </Actions>
+  <Principals>
+    <Principal id=""Author"">
+      <UserId>MY-CALDERA\johnny.douche</UserId>
+      <LogonType>InteractiveToken</LogonType>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324615373
+	ClientProcessId: 			14620
+	ParentProcessId: 			11484
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\OpenCalcTask
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Date>2024-08-19T19:54:18</Date>
+    <Author>MY-CALDERA\johnny.douche</Author>
+    <URI>\OpenCalcTask</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <CalendarTrigger>
+      <StartBoundary>2024-08-19T20:04:00</StartBoundary>
+      <Enabled>true</Enabled>
+      <ScheduleByDay>
+        <DaysInterval>1</DaysInterval>
+      </ScheduleByDay>
+    </CalendarTrigger>
+  </Triggers>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>C:\Windows\System32\calc.exe</Command>
+    </Exec>
+  </Actions>
+  <Principals>
+    <Principal id=""Author"">
+      <UserId>MY-CALDERA\johnny.douche</UserId>
+      <LogonType>InteractiveToken</LogonType>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324615313
+	ClientProcessId: 			11028
+	ParentProcessId: 			11836
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\AtomicTask
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.3"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <URI>\AtomicTask</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <LogonTrigger>
+      <Enabled>true</Enabled>
+    </LogonTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""Author"">
+      <GroupId>S-1-5-32-544</GroupId>
+      <RunLevel>HighestAvailable</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <DisallowStartOnRemoteAppSession>false</DisallowStartOnRemoteAppSession>
+    <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>calc.exe</Command>
+    </Exec>
+  </Actions>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324612947
+	ClientProcessId: 			10320
+	ParentProcessId: 			912
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-21-2660913165-747899962-3445366673-1106
+	Account Name:		johnny.douche
+	Account Domain:		MY-CALDERA
+	Logon ID:		0xF81E3
+
+Task Information:
+	Task Name: 		\atomic red team
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Version>1.1.1</Version>
+    <Author>atomicredteam</Author>
+    <Description>atomic red team schedule task with hidden attribute</Description>
+    <URI>\atomic red team</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <LogonTrigger>
+      <Enabled>true</Enabled>
+    </LogonTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""Author"">
+      <RunLevel>LeastPrivilege</RunLevel>
+      <LogonType>InteractiveToken</LogonType>
+      <UserId>MY-CALDERA\johnny.douche</UserId>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>true</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT0S</ExecutionTimeLimit>
+    <Priority>6</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>C:\Windows\system32\calc.exe""</Command>
+      <Arguments />
+    </Exec>
+  </Actions>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8162774324612947
+	ClientProcessId: 			10320
+	ParentProcessId: 			912
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		MY-CAL-WIN10$
+	Account Domain:		MY-CALDERA
+	Logon ID:		0x3E7
+
+Task Information:
+	Task Name: 		\OneDrive Per-Machine Standalone Update Task
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Author>Microsoft Corporation</Author>
+    <URI>\OneDrive Per-Machine Standalone Update Task</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <TimeTrigger>
+      <StartBoundary>1992-05-01T09:00:00</StartBoundary>
+      <Enabled>true</Enabled>
+      <Repetition>
+        <Interval>P1D</Interval>
+        <StopAtDurationEnd>false</StopAtDurationEnd>
+      </Repetition>
+      <RandomDelay>PT4H</RandomDelay>
+    </TimeTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""Author"">
+      <UserId>SYSTEM</UserId>
+      <RunLevel>HighestAvailable</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>P1D</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>C:\Program Files\Microsoft OneDrive\OneDriveStandaloneUpdater.exe</Command>
+      <Arguments />
+    </Exec>
+  </Actions>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		7036874417802720
+	ClientProcessId: 			8768
+	ParentProcessId: 			11332
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		MY-CAL-WIN10$
+	Account Domain:		MY-CALDERA
+	Logon ID:		0x3E7
+
+Task Information:
+	Task Name: 		\Microsoft\Windows\UpdateOrchestrator\MusUx_LogonUpdateResults
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <URI>\Microsoft\Windows\UpdateOrchestrator\MusUx_LogonUpdateResults</URI>
+    <SecurityDescriptor>D:P(A;;FA;;;SY)(A;;FRFX;;;LS)(A;;FRFX;;;BA)</SecurityDescriptor>
+  </RegistrationInfo>
+  <Triggers>
+    <LogonTrigger>
+      <Enabled>true</Enabled>
+      <Delay>PT45S</Delay>
+    </LogonTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""Author"">
+      <RunLevel>LeastPrivilege</RunLevel>
+      <UserId>S-1-5-18</UserId>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>%systemroot%\system32\MusNotification.exe</Command>
+      <Arguments>LogonUpdateResults</Arguments>
+    </Exec>
+  </Actions>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		7036874417766569
+	ClientProcessId: 			2340
+	ParentProcessId: 			768
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		MY-CAL-WIN10$
+	Account Domain:		MY-CALDERA
+	Logon ID:		0x3E7
+
+Task Information:
+	Task Name: 		\Microsoft\Windows\EnterpriseMgmtNonCritical\B8CDB685-E763-459A-B39B-CB68B1541710\Queued Schedule created for queued alerts
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.4"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Author>$(@%systemRoot%\system32\deviceenroller.exe,-101)</Author>
+    <Description>$(@%systemRoot%\system32\deviceenroller.exe,-102)</Description>
+    <URI>\Microsoft\Windows\EnterpriseMgmtNonCritical\B8CDB685-E763-459A-B39B-CB68B1541710\Queued Schedule created for queued alerts</URI>
+    <SecurityDescriptor>D:(A;;FA;;;BA)(A;;FA;;;SY)(A;;FRFX;;;LS)</SecurityDescriptor>
+  </RegistrationInfo>
+  <Triggers>
+    <WnfStateChangeTrigger id=""DataSenseTrigger"">
+      <Enabled>true</Enabled>
+      <StateName>7528BCA32E008315</StateName>
+      <Data>01</Data>
+      <DataOffset>0</DataOffset>
+    </WnfStateChangeTrigger>
+    <WnfStateChangeTrigger id=""FreeNetworkTrigger"">
+      <Enabled>true</Enabled>
+      <StateName>7510BCA33E0B8441</StateName>
+      <Data>03</Data>
+      <DataOffset>0</DataOffset>
+    </WnfStateChangeTrigger>
+    <TimeTrigger>
+      <StartBoundary>2024-08-20T09:15:31</StartBoundary>
+      <Enabled>true</Enabled>
+    </TimeTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""LocalSystem"">
+      <UserId>S-1-5-18</UserId>
+      <RunLevel>HighestAvailable</RunLevel>
+      <LogonType>InteractiveToken</LogonType>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <AllowHardTerminate>false</AllowHardTerminate>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <DisallowStartOnRemoteAppSession>false</DisallowStartOnRemoteAppSession>
+    <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""LocalSystem"">
+    <Exec>
+      <Command>%windir%\system32\deviceenroller.exe</Command>
+      <Arguments>/o ""B8CDB685-E763-459A-B39B-CB68B1541710"" /c /q</Arguments>
+    </Exec>
+  </Actions>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		7036874417802709
+	ClientProcessId: 			2604
+	ParentProcessId: 			1260
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		MY-CAL-WIN10$
+	Account Domain:		MY-CALDERA
+	Logon ID:		0x3E7
+
+Task Information:
+	Task Name: 		\Microsoft\Windows\EnterpriseMgmtNonCritical\B8CDB685-E763-459A-B39B-CB68B1541710\Queued Schedule created for queued alerts
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.4"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Author>$(@%systemRoot%\system32\deviceenroller.exe,-101)</Author>
+    <Description>$(@%systemRoot%\system32\deviceenroller.exe,-102)</Description>
+    <URI>\Microsoft\Windows\EnterpriseMgmtNonCritical\B8CDB685-E763-459A-B39B-CB68B1541710\Queued Schedule created for queued alerts</URI>
+    <SecurityDescriptor>D:(A;;FA;;;BA)(A;;FA;;;SY)(A;;FRFX;;;LS)</SecurityDescriptor>
+  </RegistrationInfo>
+  <Triggers>
+    <WnfStateChangeTrigger id=""DataSenseTrigger"">
+      <Enabled>true</Enabled>
+      <StateName>7528BCA32E008315</StateName>
+      <Data>01</Data>
+      <DataOffset>0</DataOffset>
+    </WnfStateChangeTrigger>
+    <WnfStateChangeTrigger id=""FreeNetworkTrigger"">
+      <Enabled>true</Enabled>
+      <StateName>7510BCA33E0B8441</StateName>
+      <Data>03</Data>
+      <DataOffset>0</DataOffset>
+    </WnfStateChangeTrigger>
+    <TimeTrigger>
+      <StartBoundary>2024-08-20T11:50:45</StartBoundary>
+      <Enabled>true</Enabled>
+    </TimeTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""LocalSystem"">
+      <UserId>S-1-5-18</UserId>
+      <RunLevel>HighestAvailable</RunLevel>
+      <LogonType>InteractiveToken</LogonType>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <AllowHardTerminate>false</AllowHardTerminate>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <DisallowStartOnRemoteAppSession>false</DisallowStartOnRemoteAppSession>
+    <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""LocalSystem"">
+    <Exec>
+      <Command>%windir%\system32\deviceenroller.exe</Command>
+      <Arguments>/o ""B8CDB685-E763-459A-B39B-CB68B1541710"" /c /q</Arguments>
+    </Exec>
+  </Actions>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		8444249301319778
+	ClientProcessId: 			4696
+	ParentProcessId: 			1592
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		MY-CAL-WIN10$
+	Account Domain:		MY-CALDERA
+	Logon ID:		0x3E7
+
+Task Information:
+	Task Name: 		\Microsoft\Office\Office Feature Updates
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.3"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Date>2017-01-01T00:00:00</Date>
+    <Author>Microsoft Office</Author>
+    <Version>16.0.0</Version>
+    <Description>This task ensures that your Microsoft Office installation can check for feature updates.</Description>
+    <URI>\Microsoft\Office\Office Feature Updates</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <CalendarTrigger>
+      <StartBoundary>2017-01-01T02:10:00</StartBoundary>
+      <ExecutionTimeLimit>PT1H</ExecutionTimeLimit>
+      <Enabled>true</Enabled>
+      <RandomDelay>PT4H</RandomDelay>
+      <ScheduleByDay>
+        <DaysInterval>1</DaysInterval>
+      </ScheduleByDay>
+    </CalendarTrigger>
+    <CalendarTrigger>
+      <StartBoundary>2017-01-01T06:10:00</StartBoundary>
+      <ExecutionTimeLimit>PT1H</ExecutionTimeLimit>
+      <Enabled>true</Enabled>
+      <RandomDelay>PT4H</RandomDelay>
+      <ScheduleByDay>
+        <DaysInterval>1</DaysInterval>
+      </ScheduleByDay>
+    </CalendarTrigger>
+    <CalendarTrigger>
+      <StartBoundary>2017-01-01T10:10:00</StartBoundary>
+      <ExecutionTimeLimit>PT1H</ExecutionTimeLimit>
+      <Enabled>true</Enabled>
+      <RandomDelay>PT4H</RandomDelay>
+      <ScheduleByDay>
+        <DaysInterval>1</DaysInterval>
+      </ScheduleByDay>
+    </CalendarTrigger>
+    <CalendarTrigger>
+      <StartBoundary>2017-01-01T14:10:00</StartBoundary>
+      <ExecutionTimeLimit>PT1H</ExecutionTimeLimit>
+      <Enabled>true</Enabled>
+      <RandomDelay>PT4H</RandomDelay>
+      <ScheduleByDay>
+        <DaysInterval>1</DaysInterval>
+      </ScheduleByDay>
+    </CalendarTrigger>
+    <CalendarTrigger>
+      <StartBoundary>2017-01-01T18:10:00</StartBoundary>
+      <ExecutionTimeLimit>PT1H</ExecutionTimeLimit>
+      <Enabled>true</Enabled>
+      <RandomDelay>PT4H</RandomDelay>
+      <ScheduleByDay>
+        <DaysInterval>1</DaysInterval>
+      </ScheduleByDay>
+    </CalendarTrigger>
+    <CalendarTrigger>
+      <StartBoundary>2017-01-01T22:10:00</StartBoundary>
+      <ExecutionTimeLimit>PT1H</ExecutionTimeLimit>
+      <Enabled>true</Enabled>
+      <RandomDelay>PT4H</RandomDelay>
+      <ScheduleByDay>
+        <DaysInterval>1</DaysInterval>
+      </ScheduleByDay>
+    </CalendarTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""Author"">
+      <GroupId>S-1-5-32-545</GroupId>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <StopOnIdleEnd>false</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <DisallowStartOnRemoteAppSession>false</DisallowStartOnRemoteAppSession>
+    <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT1H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Setting
+
+Other Information:
+	ProcessCreationTime: 		7036874417803716
+	ClientProcessId: 			27684
+	ParentProcessId: 			19188
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		MY-CAL-WIN10$
+	Account Domain:		MY-CALDERA
+	Logon ID:		0x3E7
+
+Task Information:
+	Task Name: 		\Microsoft\Office\Office Feature Updates Logon
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.3"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Date>2017-01-01T00:00:00</Date>
+    <Author>Microsoft Office</Author>
+    <Version>16.0.0</Version>
+    <Description>This task ensures that your Microsoft Office installation can check for feature updates.</Description>
+    <URI>\Microsoft\Office\Office Feature Updates Logon</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <LogonTrigger>
+      <ExecutionTimeLimit>PT30M</ExecutionTimeLimit>
+      <Enabled>true</Enabled>
+      <Delay>PT15M</Delay>
+    </LogonTrigger>
+    <SessionStateChangeTrigger>
+      <ExecutionTimeLimit>PT30M</ExecutionTimeLimit>
+      <Enabled>true</Enabled>
+      <StateChange>SessionUnlock</StateChange>
+      <Delay>PT15M</Delay>
+    </SessionStateChangeTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""Author"">
+      <GroupId>S-1-5-32-545</GroupId>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <StopOnIdleEnd>false</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <DisallowStartOnRemoteAppSession>false</DisallowStartOnRemoteAppSession>
+    <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT30M</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""Author"">
+    <Exec>
+      <Command>C:\Program Files (x86)\Microsoft Office\root\Office16\sdxhelper.exe</Command>
+      <Arguments>/onlogon</Arguments>
+    </Exec>
+  </Actions>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		7036874417803720
+	ClientProcessId: 			25324
+	ParentProcessId: 			19188
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		MY-CAL-WIN10$
+	Account Domain:		MY-CALDERA
+	Logon ID:		0x3E7
+
+Task Information:
+	Task Name: 		\Microsoft\Windows\EnterpriseMgmtNonCritical\B8CDB685-E763-459A-B39B-CB68B1541710\Queued Schedule created for queued alerts
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.4"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <Author>$(@%systemRoot%\system32\deviceenroller.exe,-101)</Author>
+    <Description>$(@%systemRoot%\system32\deviceenroller.exe,-102)</Description>
+    <URI>\Microsoft\Windows\EnterpriseMgmtNonCritical\B8CDB685-E763-459A-B39B-CB68B1541710\Queued Schedule created for queued alerts</URI>
+    <SecurityDescriptor>D:(A;;FA;;;BA)(A;;FA;;;SY)(A;;FRFX;;;LS)</SecurityDescriptor>
+  </RegistrationInfo>
+  <Triggers>
+    <WnfStateChangeTrigger id=""DataSenseTrigger"">
+      <Enabled>true</Enabled>
+      <StateName>7528BCA32E008315</StateName>
+      <Data>01</Data>
+      <DataOffset>0</DataOffset>
+    </WnfStateChangeTrigger>
+    <WnfStateChangeTrigger id=""FreeNetworkTrigger"">
+      <Enabled>true</Enabled>
+      <StateName>7510BCA33E0B8441</StateName>
+      <Data>03</Data>
+      <DataOffset>0</DataOffset>
+    </WnfStateChangeTrigger>
+    <TimeTrigger>
+      <StartBoundary>2024-08-20T15:15:30</StartBoundary>
+      <Enabled>true</Enabled>
+    </TimeTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""LocalSystem"">
+      <UserId>S-1-5-18</UserId>
+      <RunLevel>HighestAvailable</RunLevel>
+      <LogonType>InteractiveToken</LogonType>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <AllowHardTerminate>false</AllowHardTerminate>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <DisallowStartOnRemoteAppSession>false</DisallowStartOnRemoteAppSession>
+    <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context=""LocalSystem"">
+    <Exec>
+      <Command>%windir%\system32\deviceenroller.exe</Command>
+      <Arguments>/o ""B8CDB685-E763-459A-B39B-CB68B1541710"" /c /q</Arguments>
+    </Exec>
+  </Actions>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		7036874417805746
+	ClientProcessId: 			19080
+	ParentProcessId: 			15552
+	FQDN: 		0
+	"
+MY-CAL-WIN10.my-caldera.local,4698,"A scheduled task was created.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		MY-CAL-WIN10$
+	Account Domain:		MY-CALDERA
+	Logon ID:		0x3E7
+
+Task Information:
+	Task Name: 		\Microsoft\Windows\EnterpriseMgmt\DesktopAppCSP\Resume App Installation Actions
+	Task Content: 		<?xml version=""1.0"" encoding=""UTF-16""?>
+<Task version=""1.2"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">
+  <RegistrationInfo>
+    <URI>\Microsoft\Windows\EnterpriseMgmt\DesktopAppCSP\Resume App Installation Actions</URI>
+  </RegistrationInfo>
+  <Triggers>
+    <BootTrigger id=""Resume On System Startup"">
+      <Enabled>true</Enabled>
+      <Delay>PT15S</Delay>
+    </BootTrigger>
+    <LogonTrigger id=""Resume On User Logon"">
+      <Enabled>false</Enabled>
+      <Delay>PT5S</Delay>
+    </LogonTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id=""LocalSystem"">
+      <RunLevel>LeastPrivilege</RunLevel>
+      <UserId>S-1-5-18</UserId>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT72H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+    <RestartOnFailure>
+      <Interval>PT5M</Interval>
+      <Count>3</Count>
+    </RestartOnFailure>
+  </Settings>
+  <Actions Context=""LocalSystem"">
+    <Exec>
+      <Command>C:\Windows\system32\MDMAppInstaller.exe</Command>
+    </Exec>
+  </Actions>
+</Task>
+
+Other Information:
+	ProcessCreationTime: 		7036874417805746
+	ClientProcessId: 			19080
+	ParentProcessId: 			15552
+	FQDN: 		0
+	"

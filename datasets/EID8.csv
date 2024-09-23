@@ -1,0 +1,136 @@
+,computer_name,event_id,message
+0,MY-CAL-WIN10.my-caldera.local,8,"CreateRemoteThread detected:
+RuleName: -
+UtcTime: 2024-08-20 01:37:18.261
+SourceProcessGuid: {ca24abc9-f34e-66c3-d50f-000000001d00}
+SourceProcessId: 3092
+SourceImage: C:\AtomicRedTeam\atomics\T1055\bin\x64\redVanity.exe
+TargetProcessGuid: {ca24abc9-f34d-66c3-d40f-000000001d00}
+TargetProcessId: 9864
+TargetImage: C:\Windows\System32\calc.exe
+NewThreadId: 8868
+StartAddress: 0x00007FF8E32A6050
+StartModule: C:\Windows\SYSTEM32\ntdll.dll
+StartFunction: -
+SourceUser: MY-CALDERA\johnny.douche
+TargetUser: MY-CALDERA\johnny.douche"
+1,MY-CAL-WIN10.my-caldera.local,8,"CreateRemoteThread detected:
+RuleName: -
+UtcTime: 2024-08-20 01:37:59.281
+SourceProcessGuid: {ca24abc9-f374-66c3-1910-000000001d00}
+SourceProcessId: 4772
+SourceImage: C:\AtomicRedTeam\atomics\T1055.002\bin\RedInjection.exe
+TargetProcessGuid: {ca24abc9-f375-66c3-1b10-000000001d00}
+TargetProcessId: 1332
+TargetImage: C:\Windows\System32\notepad.exe
+NewThreadId: 8040
+StartAddress: 0x0000025A577517B2
+StartModule: -
+StartFunction: -
+SourceUser: MY-CALDERA\johnny.douche
+TargetUser: MY-CALDERA\johnny.douche"
+2,MY-CAL-WIN10.my-caldera.local,8,"CreateRemoteThread detected:
+RuleName: -
+UtcTime: 2024-08-20 01:37:17.265
+SourceProcessGuid: {ca24abc9-f34d-66c3-d00f-000000001d00}
+SourceProcessId: 10876
+SourceImage: C:\AtomicRedTeam\atomics\T1055\bin\x64\InjectView.exe
+TargetProcessGuid: {ca24abc9-ed25-66c3-fc09-000000001d00}
+TargetProcessId: 2728
+TargetImage: C:\Windows\System32\notepad.exe
+NewThreadId: 6924
+StartAddress: 0x000001819F2D0000
+StartModule: -
+StartFunction: -
+SourceUser: MY-CALDERA\johnny.douche
+TargetUser: MY-CALDERA\johnny.douche"
+3,MY-CAL-WIN10.my-caldera.local,8,"CreateRemoteThread detected:
+RuleName: -
+UtcTime: 2024-08-20 01:11:43.504
+SourceProcessGuid: {ca24abc9-ed4f-66c3-300a-000000001d00}
+SourceProcessId: 10804
+SourceImage: C:\Windows\System32\rdrleakdiag.exe
+TargetProcessGuid: {ca24abc9-d624-66c3-0c00-000000001d00}
+TargetProcessId: 788
+TargetImage: C:\Windows\System32\lsass.exe
+NewThreadId: 5744
+StartAddress: 0x00007FF8E32CDA30
+StartModule: C:\Windows\SYSTEM32\ntdll.dll
+StartFunction: RtlHeapTrkInitialize
+SourceUser: MY-CALDERA\johnny.douche
+TargetUser: NT AUTHORITY\SYSTEM"
+4,MY-CAL-WIN10.my-caldera.local,8,"CreateRemoteThread detected:
+RuleName: -
+UtcTime: 2024-08-20 01:11:03.439
+SourceProcessGuid: {ca24abc9-ed27-66c3-000a-000000001d00}
+SourceProcessId: 3708
+SourceImage: C:\Users\JOHNNY~1.DOU\AppData\Local\Temp\g64-af.exe
+TargetProcessGuid: {ca24abc9-d624-66c3-0c00-000000001d00}
+TargetProcessId: 788
+TargetImage: C:\Windows\System32\lsass.exe
+NewThreadId: 4408
+StartAddress: 0x0000025EA83D0000
+StartModule: -
+StartFunction: -
+SourceUser: MY-CALDERA\johnny.douche
+TargetUser: NT AUTHORITY\SYSTEM"
+5,MY-CAL-WIN10.my-caldera.local,8,"CreateRemoteThread detected:
+RuleName: -
+UtcTime: 2024-08-20 01:11:03.264
+SourceProcessGuid: {ca24abc9-ed27-66c3-000a-000000001d00}
+SourceProcessId: 3708
+SourceImage: C:\Users\JOHNNY~1.DOU\AppData\Local\Temp\g64-af.exe
+TargetProcessGuid: {ca24abc9-d624-66c3-0c00-000000001d00}
+TargetProcessId: 788
+TargetImage: C:\Windows\System32\lsass.exe
+NewThreadId: 9552
+StartAddress: 0x0000025EA83D0000
+StartModule: -
+StartFunction: -
+SourceUser: MY-CALDERA\johnny.douche
+TargetUser: NT AUTHORITY\SYSTEM"
+6,MY-CAL-WIN10.my-caldera.local,8,"CreateRemoteThread detected:
+RuleName: -
+UtcTime: 2024-08-20 01:38:11.405
+SourceProcessGuid: {ca24abc9-f383-66c3-2810-000000001d00}
+SourceProcessId: 11884
+SourceImage: C:\AtomicRedTeam\atomics\T1055.004\bin\T1055.exe
+TargetProcessGuid: {ca24abc9-f383-66c3-2a10-000000001d00}
+TargetProcessId: 11984
+TargetImage: C:\Windows\System32\notepad.exe
+NewThreadId: 11992
+StartAddress: 0x00007FF8E1220830
+StartModule: -
+StartFunction: -
+SourceUser: MY-CALDERA\johnny.douche
+TargetUser: MY-CALDERA\johnny.douche"
+7,MY-CAL-WIN10.my-caldera.local,8,"CreateRemoteThread detected:
+RuleName: -
+UtcTime: 2024-08-20 01:12:43.514
+SourceProcessGuid: {ca24abc9-ed4f-66c3-300a-000000001d00}
+SourceProcessId: 10804
+SourceImage: C:\Windows\System32\rdrleakdiag.exe
+TargetProcessGuid: {ca24abc9-d624-66c3-0c00-000000001d00}
+TargetProcessId: 788
+TargetImage: C:\Windows\System32\lsass.exe
+NewThreadId: 2416
+StartAddress: 0x00007FF8E32A6050
+StartModule: C:\Windows\SYSTEM32\ntdll.dll
+StartFunction: -
+SourceUser: MY-CALDERA\johnny.douche
+TargetUser: NT AUTHORITY\SYSTEM"
+8,MY-CAL-WIN10.my-caldera.local,8,"CreateRemoteThread detected:
+RuleName: -
+UtcTime: 2024-08-20 03:23:11.665
+SourceProcessGuid: {ca24abc9-0c1f-66c4-8b1b-000000001d00}
+SourceProcessId: 10472
+SourceImage: C:\Windows\System32\rdrleakdiag.exe
+TargetProcessGuid: {ca24abc9-d6e9-66c3-e400-000000001d00}
+TargetProcessId: 8664
+TargetImage: C:\Windows\System32\ApplicationFrameHost.exe
+NewThreadId: 6996
+StartAddress: 0x00007FF8E32CDA30
+StartModule: C:\Windows\SYSTEM32\ntdll.dll
+StartFunction: RtlHeapTrkInitialize
+SourceUser: MY-CALDERA\johnny.douche
+TargetUser: MY-CALDERA\johnny.douche"
