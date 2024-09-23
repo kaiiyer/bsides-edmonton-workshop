@@ -1,0 +1,20 @@
+title: Net.EXE Execution
+id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
+status: test
+description: Detects execution of "Net.EXE".
+detection:
+  selection_img:
+    Image|endswith:
+      - '\\net.exe'
+      - '\\net1.exe'
+  selection_cli:
+    CommandLine|contains:
+      - ' accounts'
+      - ' group'
+      - ' localgroup'
+      - ' share'
+      - ' start'
+      - ' stop '
+      - ' user'
+      - ' view'
+  condition: all of selection_*

@@ -1,0 +1,24 @@
+# JSON handling
+json5
+
+# Data manipulation and analysis
+pandas
+
+# Numerical computations
+numpy
+
+# Machine learning framework
+tensorflow
+
+# Scikit-learn for machine learning utilities
+scikit-learn
+
+# Community detection in networks
+python-louvain
+
+# Graph analysis library
+networkx
+
+# Plotting library
+matplotlib
+plotly
